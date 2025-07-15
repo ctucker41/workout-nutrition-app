@@ -1,0 +1,57 @@
+####################################################################################################################
+Backend server -- ./server/
+Frontend server -- ./frontend/
+```You have to run npm run dev inside each folder individually or it wont work```
+
+```If you need to access the database specifically through terminal```
+
+psql -U postgres -d workoutapp
+\q to exit psql
+
+
+You are going to need to branch out your project folders on the backend, so you dont have everything inside of
+your index.ts file. It gets very complicated so for now I'm leaving the index.ts alone
+
+
+Backend API's:
+
+    Internal:
+-- User Management
+        Login, Signup, Authentication, Forgot Password etc.
+        Profile Setup
+        User Preferences (Accessibility)
+
+-- Workout Tracking
+        CRUD Workout Plans
+        Workout Logging
+        Progress Tracking (Heaviest Weight, 1RM, Volume, Load, etc.)
+
+-- Nutrition Tracking
+        Meal/Food Logging
+        Calories/Macro/Micro Tracking
+        Food/Meal Saving
+
+-- Analytics & Progress
+        Body Measurements Logging
+        Interactive Graphs & Analytics
+        Goals
+        Reminders
+
+    External:
+-- Fitness Tracking Integration
+        Apple Watch, Google Fit, FitBit etc.
+
+-- Nutritional Database, Barcode Scanning
+
+-- Workout Libraries (Could do an Internal custom library too)
+
+-- Authentication
+
+-- Social Network Sharing
+
+-- Push Notifications
+
+-- Payment/Subscription (If Needed Eventually)
+
+Frontend Utilities:
+Mobile-First Programming
