@@ -1,11 +1,13 @@
 import { Router } from 'express';
 import bcrypt from 'bcrypt';
 import pool from '../../utils/db';
+import dotenv from 'dotenv';
 
 const router = Router();
+dotenv.config();
 
 router.post('/signup', async (req, res) => {
-    const { name, email, password, height, weight, goal } = req.body;
+    const { name, email, password } = req.body;
 
     if (!name ) {
         return res.status(400).json({ error: 'Name Field is Required' });
@@ -26,10 +28,10 @@ router.post('/signup', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
 
         const result = await pool.query(
-            `INSERT INTO users (name, email, password_hash, height, weight, goal)
-       VALUES ($1, $2, $3, $4, $5, $6)
-       RETURNING id, name, email, height, weight, goal, created_at`,
-            [name, email, hashedPassword, height, weight, goal]
+            `INSERT INTO users (name, email, password_hash)
+       VALUES ($1, $2, $3)
+       RETURNING id, name, email, created_at`,
+            [name, email, hashedPassword]
         );
 
         res.status(201).json({ user: result.rows[0] });
