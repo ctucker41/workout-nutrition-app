@@ -74,6 +74,7 @@ platforms when it is ready.
 
 **Deployment plan:**
   - AWS
+  - Wrap in React Native For Mobile Accessibility
 
 ---
 
