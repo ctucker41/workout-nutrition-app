@@ -3,13 +3,13 @@
 ![Work in Progress](https://img.shields.io/badge/status-WIP-yellow)
 
 ## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Upcoming Features](#upcoming-features)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+- [About](#-about)
+- [Features](#%EF%B8%8F-features-current)
+- [Tech Stack](#-tech-stack)
+- [Upcoming Features](#-upcoming-features)
+- [Getting Started](#-getting-started)
+- [Contributing](#%EF%B8%8F-contributing)
+- [License](#-license)
 - [Contact](#contact)
 
 ---
