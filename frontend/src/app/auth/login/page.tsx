@@ -20,12 +20,12 @@ export default function LoginPage() {
                     <span className="select-none" >Remember me</span>
                 </label>
 
-                <Link href="../.." className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}> Forgot Password </Link>
+                <Link href="/auth/forgotPassword" className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}> Forgot Password </Link>
             </div>
 
             <div className="flex flex-col mt-12">
             <p>Don&apos;t have an account?</p>
-            <Link href="../.." className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}>Create an account</Link>
+            <Link href="/auth/signup" className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}>Create an account</Link>
             </div>
 
         </div>
