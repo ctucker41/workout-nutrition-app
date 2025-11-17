@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Checkbox } from "@/components/ui/checkbox";
 
 
 export default function ForgotPasswordPage() {
