@@ -8,8 +8,8 @@ export default function ForgotPasswordPage() {
             <h1 className="text-2xl font-bold mb-8 text-center">Forgot Your Password?</h1>
             <p className="text-center text-lg leading-relaxed mb-4">Please enter the email address associated with your account.</p>
             <form className="flex flex-col gap-5 mb-4">
-                <input className="p-2 border rounded" type="email" placeholder="E-mail" />
-                <button className="bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700">Submit</button>
+                <input className="p-2 border rounded select-none" type="email" placeholder="E-mail" />
+                <button className="bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700 select-none">Submit</button>
             </form>
 
             <div className="flex flex-col mt-4">

@@ -8,7 +8,7 @@ export default function Dashboard() {
             <div></div>
             <h1 className="text-center text-white font-semibold text-xl md:text-2xl select-none">Dashboard</h1>
             <div className="flex justify-end">
-            <Link href="/" className="text-md md:text-lg text-white hover:bg-blue-700 px-3 py-2 rounded-2xl select-none">Logout</Link>
+            <Link href="/" className="text-md md:text-lg text-white hover:bg-blue-700 px-3 py-2 rounded-2xl select-none" draggable={false}>Logout</Link>
             </div>
         </div>
 

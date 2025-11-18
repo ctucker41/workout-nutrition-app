@@ -7,11 +7,11 @@ export default function SignupPage() {
             <h1 className="text-4xl font-bold mb-8 text-center text-blue-600">Workout App</h1>
             <h1 className="text-2xl font-bold mb-4 text-center">Create An Account</h1>
             <form className="flex flex-col gap-5 mb-4">
-                <input className="p-2 border rounded" type="name" placeholder="Name" />
-                <input className="p-2 border rounded" type="email" placeholder="E-mail" />
-                <input className="p-2 border rounded" type="password" placeholder="Password" />
-                <input className="p-2 border rounded" type="confirmpassword" placeholder="Confirm Password" />
-                <button className="bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700">Create Account</button>
+                <input className="p-2 border rounded select-none" type="name" placeholder="Name" />
+                <input className="p-2 border rounded select-none" type="email" placeholder="E-mail" />
+                <input className="p-2 border rounded select-none" type="password" placeholder="Password" />
+                <input className="p-2 border rounded select-none" type="confirmpassword" placeholder="Confirm Password" />
+                <button className="bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700 select-none">Create Account</button>
             </form>
 
             <div className="flex flex-col mt-4">
