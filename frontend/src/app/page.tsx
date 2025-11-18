@@ -10,7 +10,7 @@ export default function LoginPage() {
             <form className="flex flex-col gap-5 mb-4">
                 <input className="p-2 border rounded select-none" type="email" placeholder="E-mail" />
                 <input className="p-2 border rounded select-none" type="password" placeholder="Password" />
-                <Link href="/auth/dashboard" className="text-center bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700 select-none">Submit</Link>
+                <Link href="/auth/dashboards" className="text-center bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700 select-none">Submit</Link>
             </form>
 
             <div className="flex flex-row justify-between">
