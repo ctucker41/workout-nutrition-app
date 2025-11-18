@@ -15,6 +15,7 @@ export default function Dashboard() {
 
             <div className="flex flex-col">
 
+                {/* Add many quotes that fit the same vibe and randomize them all so each time it refreshes with a new quote */}
                 <h1 className="text-center text-2xl font-semibold mt-12 md:mt-16">Getting active, or time for a post-workout snack?</h1>
 
                 <div className="flex flex-row justify-between mx-4 mt-12 md:m-16 gap-4">
