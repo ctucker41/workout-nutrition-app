@@ -1,33 +1,16 @@
-import Link from 'next/link'
-import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link"
 
-
-export default function LoginPage() {
+export default function Dashboard() {
     return (
-        <div className="p-4 max-w-md mx-auto m-6">
-            <h1 className="text-4xl font-bold mb-8 text-center text-blue-600">Workout App</h1>
-            <h1 className="text-2xl font-bold mb-4 text-center">Sign In</h1>
-            <form className="flex flex-col gap-5 mb-4">
-                <input className="p-2 border rounded" type="email" placeholder="E-mail" />
-                <input className="p-2 border rounded" type="password" placeholder="Password" />
-                <button className="bg-blue-600 text-white p-2 rounded-2xl hover:bg-blue-700">Submit</button>
-            </form>
-
-            <div className="flex flex-row justify-between">
-
-                <label className="flex items-center gap-2">
-                    <Checkbox id="checkbox"/>
-                    <span className="select-none" >Remember me</span>
-                </label>
-
-                <Link href="/auth/forgotPassword" className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}> Forgot Password </Link>
+        <div className="w-full h-10 sm:h-10 md:h-14 lg:h-14
+        grid grid-cols-3 items-center md:px-6
+        bg-blue-600">
+            <div></div>
+            <h1 className="text-center text-white font-semibold text-xl md:text-2xl select-none">Dashboard</h1>
+            <div className="flex justify-end">
+            <Link href="/auth/login" className="text-md md:text-lg text-white hover:bg-blue-700 px-3 py-2 rounded-2xl select-none">Logout</Link>
             </div>
-
-            <div className="flex flex-col mt-12">
-            <p>Don&apos;t have an account?</p>
-            <Link href="/auth/signup" className="text-blue-600 hover:text-blue-700 underline select-none" draggable={false}>Create an account</Link>
-            </div>
-
         </div>
+
     )
 }
