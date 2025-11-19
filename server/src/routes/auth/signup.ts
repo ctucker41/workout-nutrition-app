@@ -7,6 +7,7 @@ const router = Router();
 dotenv.config();
 
 router.post('/signup', async (req, res) => {
+    console.log("🔥 Signup route hit:", req.body.email);
     const { name, email, password } = req.body;
 
     if (!name ) {
