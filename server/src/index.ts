@@ -12,6 +12,7 @@ import deleteRoute from './routes/auth/deleteAccount';
 
 const app = express();
 
+
 app.use(express.json());
 app.use(cors({
     origin: "*",
