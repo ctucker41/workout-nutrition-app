@@ -1,6 +1,28 @@
+"use client"
+
 import Link from "next/link"
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
+
+    const router = useRouter();
+    const [checkingAuth, setCheckingAuth] = useState(true);
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            router.replace("/auth/login");
+        } else {
+            setCheckingAuth(false);
+        }
+    }, [router]);
+
+    if (checkingAuth) {
+        return <p className="p-4">Authenticating...</p>;
+    }
+
     return (
         <div>
             <div className="w-full h-10 sm:h-10 md:h-14 lg:h-14
