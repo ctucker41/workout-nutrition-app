@@ -36,12 +36,15 @@ export default function SignupPage() {
             }),
         });
 
-        const data = await res.json();
+        const data = await res.json().catch(() => ({}));
 
         if (!res.ok) {
-            alert(data.message || "Signup failed.");
+            console.log("Signup error response:", data);
+            alert(data.error || data.message || "Signup failed.");
             return;
         }
+
+        alert("Account created");
 
         router.push("/");
     }
