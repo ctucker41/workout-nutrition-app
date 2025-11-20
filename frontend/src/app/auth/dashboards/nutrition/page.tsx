@@ -1,6 +1,26 @@
 import Link from "next/link";
+import {useRouter} from "next/navigation";
+import {useEffect, useState} from "react";
 
 export default function Dashboard() {
+
+    const router = useRouter();
+    const [checkingAuth, setCheckingAuth] = useState(true);
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            router.replace("/");
+        } else {
+            setCheckingAuth(false);
+        }
+    }, [router]);
+
+    if (checkingAuth) {
+        return <p className="p-4">Authenticating...</p>;
+    }
+
     return (
 
         <div className="w-full h-12 sm:h-12 md:h-14 lg:h-18
