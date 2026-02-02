@@ -1,4 +1,4 @@
-# 🍎 Workout & Nutrition Tracker
+# Workout & Nutrition Tracker
 
 A full-stack backend application designed to securely manage user-authenticated workout and nutrition data.  
 This project focuses on API design, authentication, data modeling, and backend reliability rather than UI polish.
@@ -13,14 +13,14 @@ The primary goal of this project is to demonstrate backend engineering fundament
 
 ---
 
-## Features
+## Implemented Features
 
 - User registration with secure password hashing (bcrypt)
 - JWT-based authentication and authorization
 - Protected routes requiring valid tokens
 - Account deletion with authorization checks
 - PostgreSQL integration for persistent data storage
-- Environment-based configuration using '.env'
+- Environment-based configuration using `.env`
 - API testing workflows using Postman
 
 ---
@@ -44,9 +44,23 @@ The primary goal of this project is to demonstrate backend engineering fundament
 ## 🚀 Getting Started
 To run this project locally:
 
-Clone The Repo:
+Clone the repo:
 
 ```bash
 git clone https://github.com/ctucker41/workout-nutrition-app.git
 cd workout-nutrition-app/server
 npm install
+```
+
+Create a `.env` file in the `server` directory:
+
+```bash
+DATABASE_URL=your_postgresql_connection_string
+JWT_SECRET=your_secret_key
+```
+
+Run the dev server:
+
+```bash
+npm run dev
+```
